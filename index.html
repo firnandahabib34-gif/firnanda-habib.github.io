@@ -3,58 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Firnanda Habib | Portofolio</title>
+  <title>Portofolio Firnanda Habib</title>
   <style>
-    body {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-      color: #333;
     }
-    header {
-      background: #0077b6;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    header p {
-      margin: .5rem 0 0;
-    }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #0077b6;
-      border-left: 4px solid #0077b6;
-      padding-left: .5rem;
-    }
-    .about p {
+
+    body {
+      background-color: #f8f9fa;
+      color: #222;
       line-height: 1.6;
     }
-    .project {
-      margin-bottom: 1.5rem;
+
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
     }
+
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #0d6efd;
+      margin-bottom: 15px;
+    }
+
+    .about img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .project {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .project h3 {
+      color: #333;
+      margin-bottom: 8px;
+    }
+
     footer {
       text-align: center;
-      padding: 1rem;
-      background: #0077b6;
+      padding: 15px;
+      background-color: #0d6efd;
       color: white;
-      margin-top: 2rem;
+      margin-top: 30px;
     }
-    a {
-      color: #0077b6;
-      text-decoration: none;
-    }
-    a:hover {
+
+    footer a {
+      color: white;
       text-decoration: underline;
     }
   </style>
@@ -64,11 +90,51 @@
   <header>
     <h1>Firnanda Habib</h1>
     <p>Mahasiswa Teknik Informatika | Teknisi Printer & Komputer | Web Developer Pemula</p>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#projects">Proyek</a>
+      <a href="#contact">Kontak</a>
+    </nav>
   </header>
 
-  <section class="about">
+  <section id="about" class="about">
+    <center>
+      <img src="https://via.placeholder.com/150" alt="Foto Profil">
+    </center>
     <h2>Tentang Saya</h2>
     <p>
-      Saya adalah mahasiswa <strong>Teknik Informatika di Politeknik Negeri Batam</strong> yang juga bekerja sebagai
-      <strong>teknisi printer dan komputer</strong>. Saya memiliki minat besar di bidang
-      <strong>web development</
+      Saya adalah mahasiswa <b>Teknik Informatika di Politeknik Negeri Batam</b> dan juga bekerja sebagai 
+      <b>teknisi printer dan komputer</b>. Saya memiliki minat besar di bidang <b>web development</b> dan 
+      <b>pembuatan aplikasi berbasis web</b>. Saat ini saya sedang mengembangkan 
+      <b>aplikasi web pengelolaan rapat</b> sebagai salah satu proyek kuliah saya.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Proyek Saya</h2>
+
+    <div class="project">
+      <h3>Aplikasi Pengelolaan Rapat</h3>
+      <p>Aplikasi web untuk membantu proses pencatatan dan pengelolaan rapat di kampus. 
+      Dikembangkan menggunakan HTML, CSS, dan JavaScript dengan konsep CRUD sederhana.</p>
+    </div>
+
+    <div class="project">
+      <h3>Perawatan & Diagnosa Printer</h3>
+      <p>Proyek teknisi yang berfokus pada perbaikan dan pemeliharaan printer serta komputer 
+      untuk meningkatkan performa dan efisiensi kerja perangkat.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontak</h2>
+    <p>📧 Email: <a href="mailto:firnanda@example.com">firnanda@example.com</a></p>
+    <p>💼 GitHub: <a href="https://github.com/firnanda-habib" target="_blank">github.com/firnanda-habib</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Firnanda Habib — Dibuat dengan ❤️ menggunakan HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
